@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <Event status="coming up">
+  <Song title="Jump in my car">
+   <Artist name="cc catch" ID="" URL=""/>
+   <Info StartTime="17:57:36" JazlerID="111" PlayListerID="" />   <Media runTime="03:42"/>
+   <SongURL></SongURL>
+   <SongBarCode></SongBarCode>
+   <SongCDKey></SongCDKey>
+  </Song>
+  <Song title="Only you">
+   <Artist name="Savage" ID="" URL=""/>
+   <Info StartTime="18:01:19" JazlerID="252" PlayListerID="" />   <Media runTime="06:51"/>
+   <SongURL></SongURL>
+   <SongBarCode></SongBarCode>
+   <SongCDKey></SongCDKey>
+  </Song>
+  <Song title="Vanessa Williams">
+   <Artist name="Vanessa Williams" ID="" URL=""/>
+   <Info StartTime="18:08:10" JazlerID="781" PlayListerID="" />   <Media runTime="03:53"/>
+   <SongURL></SongURL>
+   <SongBarCode></SongBarCode>
+   <SongCDKey></SongCDKey>
+  </Song>
+  <Song title="Solitaire">
+   <Artist name="Gazebo" ID="" URL=""/>
+   <Info StartTime="18:12:04" JazlerID="172" PlayListerID="" />   <Media runTime="04:25"/>
+   <SongURL></SongURL>
+   <SongBarCode></SongBarCode>
+   <SongCDKey></SongCDKey>
+  </Song>
+ </Event>
+

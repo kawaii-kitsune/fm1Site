@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Studio Fm1 105.4 Ραδιοφωνικός σταθμός Ελληνικού μεσογειακού Πανεπιστημίου</title>
+</head>
+
+<body onload="XMLread()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img\logo.png" width="20%" heclass="d-inline-block align-top" alt="">
+            Studio Fm1 105.4 Ραδιοφωνικός σταθμός Ελ.Mε.Πα.
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <button class="btn btn-dark" id="soon" onclick=" reasons()">
+                        Coming Soon</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="margin:100px;">
+
+        <div class="col-sm-6 m-md-8" style="margin-bottom: 40px;bottom: 220px;  right:100px;">
+            <div class="card col-md-2 w-100" id="card">
+
+                <div class="card-body">
+
+                    <div class="container">
+                        <h1 class="card-title" id="title"></h1>
+
+                        <p id="nextSong"></p>
+                        <div class="accordion accordion-close" id="accordionHistory" style="margin-bottom: 20px;">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" id="acc_but" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        History
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionHistory">
+                                    <div class="accordion-body">
+                                        <ul id="list">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="player">
+                            <div class="col-md-7 text-center mt-5">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-dark" id="buttonPause" onclick="Pause()"
+                                        style="display:none;border-radius: 50%;">
+                                        <i class="fas fa-pause"></i></button>
+                                    <button type="button" class="btn btn-dark" id="buttonPlay"
+                                        style="border-radius: 50%;" onclick="Play()">
+                                        <i class="fas fa-play"></i></button>
+                                    <div class="row" style="padding:2px;width: 300px;text-align: center;">
+                                        <!-- <i class="fas fa-volume-down col -md-3" style="width:1rem;"></i> -->
+                                        <div class="range col-md-8" style="padding-left:50px;text-align: center;">
+                                            <input type="range" class="form-range" value="0.5" min="0" max="1"
+                                                step="0.01" id="customRange3" oninput="SetVolume(this.value)"
+                                                onchange="SetVolume(this.value)" />
+                                        </div>
+                                        <!-- <i class="fas fa-volume-up col-md-7"></i> -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id=logo class="btn btn-dark" style="margin-left: 366px;">Chat <i id="logo"
+                            class="fas fa-comments"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div id="chat">
+            <iframe src="https://www5.cbox.ws/box/?boxid=917512&boxtag=hbfd9d" height="550" width="520"
+                allowtransparency="yes" allow="autoplay" frameborder="10" marginheight="10" marginwidth="10"
+                scrolling="auto" class="center"></iframe>
+
+        </div>
+    </div>
+    <p id="para" style="display: none;">Η ιστοσελίδα του σταθμού μας βρίσκεται σε διαδικασία αναβάθμισης. Παρόλ' αυτά
+        μπορείτε να συνεχίσετε να
+        ακούτε
+        ζωντανά το πρόγραμμα μας
+        24/7 μέσω ραδιοφώνου στους 105,4 MHz ή πατώντας το Play πιο κάτω!</p>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <footer id="footer" class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

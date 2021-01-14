@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schedule System="Jazler">
+    <Event status="happening" startTime="18:55:12" eventType="song">
+        <Announcement Display="Studio Fm1 105.4 Now On Air:" />
+        <Song title="DIME PIRCH">
+            <Artist name="SAM SALTER" URL="" />
+            <Jazler ID="734" />
+            <PlayLister ID="" />
+            <Media runTime="03:39" />
+            <Expire Time="18:58:51" />
+            <SongURL></SongURL>
+            <SongBarCode></SongBarCode>
+            <SongCDKey></SongCDKey>
+        </Song>
+    </Event>
+</Schedule>
