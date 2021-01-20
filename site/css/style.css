@@ -1,42 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
-
 * {
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Clip;
-    src: url('../clip/Clip.ttf') format('truetype');
-}
-
-@font-face {
+p { 
     font-family: 'Bungee';
-    src: url('../Bungee/TurretRoad-ExtraBold.ttf') format('truetype');
-}
-
-#para {
-
-    z-index: 700;
-    position: absolute;
-    margin-left: 52%;
-    left: 30;
-    bottom: 550px;
-    width: 350px;
-    background-color: yellowgreen;
-    border-radius: 10px;
-
-}
-
-body {
-    /* background-color: #141114 !important; */
-    background-image: url('../img/uc.jpg') !important;
-    background-size: cover;
+    color: #ffffff;
 }
 
 table,
-th,
-td {
+{
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -46,36 +18,10 @@ td {
     padding: 5px;
 }
 
-#image:hover {
-    transition: transform .2s;
-    transform: scale(1.05);
-}
-
 li {
+    animation: glitch 1s linear infinite;
     font-family: 'Bungee';
     color: #ffffff;
-}
-
-p {
-    font-family: "Bungee";
-    color: #ffffff;
-}
-
-#acc_but {
-    color: #ffffff;
-    border-color: white;
-    min-height: 100%;
-    min-width: 100%;
-    background-color: rgb(104, 161, 30);
-    z-index: 2;
-    position: relative;
-    background-color: #141114;
-    background-image: linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px),
-        linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px);
-    background-size: 58px 58px;
-    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
 }
 
 .card-title {
@@ -93,26 +39,148 @@ p {
     animation: shine 2s forwards, flicker 3s infinite;
 }
 
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 66.6%;
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.Connected{
+    height: 40%;
+    width:50%;
+   margin: 50px;
+position: absolute; 
+}
+
+.press,
+.holder{
+position: relative;
+padding: 20px;
+width: 100%;
+}
+
+.topmenu{
+    width: 100%;
+    position: relative;
+}
+
+#soon{
+background-color: #6c9d30;
+margin: 5px;
+}
+
+#buttonPause{
+background-color: #3f3f3f;
+}
+
+#buttonPlay{
+background-color: #6c9d30;
+}
+body {
+    /* background-color: #141114 !important; */
+    background-image: url('../img/uc.jpg') !important;
+    background-size: cover;
+}
+
+#image:hover {
+    transition: transform .2s;
+    transform: scale(1.05);
+    background-color: rgb(104, 161, 30);
+}
+
+#acc_but {
+    color: #ffffff;
+    border-color: #6c9d30;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(104, 161, 30);
+    z-index: 2;
+    position: relative;
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+        linear-gradient(155deg, black 23px, transparent 23px),
+        linear-gradient(335deg, black 23px, transparent 23px),
+        linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+#logo{
+background-color: #6c9d30;
+position: relative;
+margin: 10px;
+}
+
+#card {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: rgb(104, 161, 30);
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+        linear-gradient(155deg, black 23px, transparent 23px),
+        linear-gradient(335deg, black 23px, transparent 23px),
+        linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+#para {
+
+    z-index: 4;
+    position: relative;
+    width: 100%;
+    background-color: #6c9d30;
+    text-align: center;
+}
+
+#player{
+   align-items: center;
+}
+
 #chat {
-    z-index: 1;
-    bottom: 18.5%;
-    left: 50%;
-    size: inherit;
-    position: fixed;
+    vertical-align: middle;
+    z-index: 3;
+    position: relative;
     display: none;
     transition: all;
     -webkit-animation: slide-down .3s ease-out;
     -moz-animation: slide-down .3s ease-out;
-
 }
 
 #image {
     left: 39%;
     bottom: 680px;
     width: 13%;
-    position: absolute;
+    position: relative;
 }
 
+#footer {
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+@font-face {
+    font-family: Clip;
+    src: url('../clip/Clip.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bungee';
+    src: url('../Bungee/TurretRoad-ExtraBold.ttf') format('truetype');
+}
 
 /* chat-animation */
 @-webkit-keyframes slide-down {
@@ -139,36 +207,8 @@ p {
     }
 }
 
-/* volume */
-#footer {
-    margin-top: 651px;
-}
-
-/* volume */
-#card {
-    top: 50px;
-    margin: 80px;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    background-color: rgb(104, 161, 30);
-    background-color: #141114;
-    background-image: linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px),
-        linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px);
-    background-size: 58px 58px;
-    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-}
-
-li {
-    animation: glitch 1s linear infinite;
-}
-
-
 /* neon animation */
 @keyframes blink {
-
     0%,
     22%,
     36%,
@@ -191,7 +231,6 @@ li {
         text-shadow: none;
     }
 }
-
 
 
 .flicker {
