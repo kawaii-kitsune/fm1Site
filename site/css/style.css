@@ -74,6 +74,21 @@ width: 100%;
 #soon{
 background-color: #6c9d30;
 margin: 5px;
+margin-left: auto;
+margin-right: 0;
+display: block;
+}
+
+#chatbuttoncontainer{
+    width: 100%
+    position: relative;
+}
+
+#logo{
+background-color: #6c9d30;
+margin-left: auto;
+margin-right: 0;
+display: block;
 }
 
 #buttonPause{
@@ -112,12 +127,6 @@ body {
     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
 }
 
-#logo{
-background-color: #6c9d30;
-position: relative;
-margin: 10px;
-}
-
 #card {
     position: relative;
     min-height: 100%;
@@ -133,7 +142,6 @@ margin: 10px;
 }
 
 #para {
-
     z-index: 4;
     position: relative;
     width: 100%;
